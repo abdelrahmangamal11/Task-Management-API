@@ -132,7 +132,33 @@ The API returns appropriate HTTP status codes:
 
 ## Project Structure
 
-<pre lang="markdown"> ## Project Structure ``` fastapi-task-management/ ├── main.py # FastAPI application entry point ├── requirements.txt # Python dependencies ├── database.db # SQLite database file ├── Dockerfile # Docker image configuration ├── docker-compose.yml # Docker Compose setup ├── .dockerignore # Files to exclude from Docker context ├── db/ │ └── session.py # Database session management ├── models/ │ ├── Task.py # Task database model │ └── enums/ │ ├── TaskStatus.py # Task status enumeration │ └── TaskPriority.py # Task priority enumeration ├── schemas/ │ └── TaskSchema.py # Pydantic models for validation ├── routes/ │ ├── general.py # Root and health endpoints │ ├── task_routes.py # Task CRUD operations │ └── filter_routes.py # Task filtering endpoints ├── services/ │ └── task_service.py # Business logic and DB interaction └── utils/ └── exceptions.py # Custom exception handlers ``` </pre>
+```text
+task-management/
+├── main.py                 # FastAPI application entry point
+├── requirements.txt        # Python dependencies
+├── database.db             # SQLite database file
+├── Dockerfile              # Docker image configuration
+├── docker-compose.yml      # Docker Compose setup
+├── .dockerignore           # Files to exclude from Docker context
+├── db/
+│   └── session.py          # Database session management
+├── models/
+│   ├── Task.py             # Task database model
+│   └── enums/
+│       ├── TaskStatus.py   # Task status enumeration
+│       └── TaskPriority.py # Task priority enumeration
+├── schemas/
+│   └── TaskSchema.py       # Pydantic models for validation
+├── routes/
+│   ├── general.py          # Root and health endpoints
+│   ├── task_routes.py      # Task CRUD operations
+│   └── filter_routes.py    # Task filtering endpoints
+├── services/
+│   └── task_service.py     # Business logic and DB interaction
+└── utils/
+    └── exceptions.py       # Custom exception handlers
+
+
 
 ## Testing
 
