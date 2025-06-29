@@ -158,7 +158,6 @@ task-management/
     └── exceptions.py       # Custom exception handlers
 
 
-
 ## Testing
 
 1. Start the server as described above
