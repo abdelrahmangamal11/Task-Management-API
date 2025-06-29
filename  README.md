@@ -132,7 +132,6 @@ The API returns appropriate HTTP status codes:
 
 ## Project Structure
 
-```text
 task-management/
 ├── main.py                 # FastAPI application entry point
 ├── requirements.txt        # Python dependencies
